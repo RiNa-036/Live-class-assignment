@@ -1,0 +1,26 @@
+class Vehicle {   // Create a class name vehicle
+//Declare two private variable
+    private String brand;
+    private String color;
+
+    //Create a public  constructor
+    public Vehicle(String brand, String color) {
+        this.brand = brand;
+        this.color = color;
+    }
+
+    public void start() {//public method
+        System.out.println("Vehicle Brand: " + brand);
+        System.out.println("Vehicle Color: " + color);
+        System.out.println("Vehicle is starting");
+    }
+
+    }
+}
+
+public class IT24036 {//main class
+    public static void main(String[] args) {
+        Vehicle v = new Vehicle(args[0], args[1]);//command line
+        v.start();
+    }
+}
